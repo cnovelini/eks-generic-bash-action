@@ -34,6 +34,6 @@ else
 fi
 
 debug "Starting kubectl collecting output"
-output=$( kubectl "$@" )
+output=$( "$@" )
 debug "${output}"
 echo ::set-output name=kubectl-out::"${output}"
